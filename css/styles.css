@@ -28,6 +28,8 @@ li {
     list-style-type: none;
 }
 
+
+
 /* невидимі заголовки */
 
 .invisible-title {
@@ -207,6 +209,7 @@ text-align: center;
 
 .team-list {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
 }
 
 .team-icon {
@@ -358,8 +361,15 @@ header {
     margin-left: auto;
 }
 
+.contact-item {
+    text-decoration: none;
+}
+
 .contact-item:not(:last-child) {
     margin-right: 50px;
+}
+.contact-item:hover, .contact-item:focus {
+    color: var(--logo-text-color);
 }
 
 .header-connect {
@@ -405,17 +415,25 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    align-items: center;
     color: var(--primary-text-color);
     text-decoration: none;
 
 }
 
 .header-mail-contact:hover, .header-mail-contact:focus {
+   fill: var(--logo-text-color);
+}
+.header-mail-contact:hover, .header-mail-contact:focus {
+   color: var(--logo-text-color);
+ }
+
+.header-tel-contact:hover, .header-tel-contact:focus {
     color: var(--logo-text-color);
 }
 
 .header-tel-contact:hover, .header-tel-contact:focus {
-    color: var(--logo-text-color);
+    fill: var(--logo-text-color);
 }
 
 .contacts-icon-envelope {
@@ -425,6 +443,9 @@ header {
     fill: var(--primery-text-color);
 }
 
+.contacts-icon-envelope:hover, .contacts-icon-envelope:focus {
+    fill:var(--logo-text-color);
+} 
 
 .contacts-icon-smartphone {
  width: 10px;
@@ -540,9 +561,16 @@ color: var(--primary-text-color);
 .project-item:nth-last-child(-n + 3) {
     margin-bottom: 0;
 }
+ .project-item-link {
+     text-decoration: none;
+     color: var(--primary-title-color);
+ }
 
+ .project-item-link {
+     display: block;
+ }
 
-.project-item:hover {
+.project-item-link:focus, .project-item-link:hover {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -590,6 +618,10 @@ fill: #000000;
 
 .client-link:hover .client-icon, .client-link:focus .client-icon {
     fill: #2196F3;
+}
+
+.client-link:hover, .client-link:focus {
+    border-color: #2196F3;
 }
 
 .client-item:not(:last-child) {

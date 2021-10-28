@@ -239,8 +239,7 @@ margin-bottom: 16px;
 .social-list {
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
-    
+
 }
 
 .social-item {
@@ -279,6 +278,7 @@ margin-bottom: 16px;
 
 .by-team-list {
     padding-top: 30px;
+    padding-bottom: 30px;
     /* padding-bottom: 30px; */
 }
 
@@ -415,6 +415,7 @@ header {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    display: flex;
     align-items: center;
     color: var(--primary-text-color);
     text-decoration: none;
@@ -440,7 +441,7 @@ header {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--primery-text-color);
+    fill: currentColor;
 }
 
 .contacts-icon-envelope:hover, .contacts-icon-envelope:focus {
@@ -451,7 +452,7 @@ header {
  width: 10px;
  height: 16px;
  margin-right: 10px;
- fill: var(--primery-text-color);
+ fill: currentColor;
 }
 
 
@@ -582,7 +583,7 @@ color: var(--primary-text-color);
     box-sizing: border-box;
     border: none;
     margin-top: 50px;
-    fill: #000000;
+    
 }
 
 .client-link {
